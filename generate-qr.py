@@ -4,7 +4,7 @@ import qrcode.image.svg
 import zxingcpp
 from PIL import Image
 
-URL = 'https://jenilkathrotia.github.io/manthan-portfolio/'
+URL = 'https://jenilkathrotia.github.io/manthan-portfolio/?utm_source=conference&utm_medium=qr&utm_campaign=portfolio'
 assets = Path(__file__).parent / 'assets'
 qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_Q, box_size=30, border=4)
 qr.add_data(URL)
